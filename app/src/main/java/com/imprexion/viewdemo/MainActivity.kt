@@ -4,7 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.imprexion.viewdemo.activity.ScaleScrollImageViewActivity
 import com.imprexion.viewdemo.activity.ViewSizeDemoActivity
+import com.imprexion.viewdemo.childThreadView.ChildThreadViewActivity
 import com.imprexion.viewdemo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +19,13 @@ class MainActivity : AppCompatActivity() {
 
         mainBinding.btnViewSize.setOnClickListener {
             startActivity(Intent(this, ViewSizeDemoActivity::class.java));
+        }
+        mainBinding.btnChildThread.setOnClickListener {
+            startActivity(Intent(this, ChildThreadViewActivity::class.java))
+        }
+
+        mainBinding.btnScaleScroll.setOnClickListener {
+            startActivity(Intent(this, ScaleScrollImageViewActivity::class.java))
         }
 
 

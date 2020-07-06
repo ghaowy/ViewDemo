@@ -18,6 +18,10 @@
         </activity>
 
         <activity android:name=".activity.ViewSizeDemoActivity" />
+        <activity
+            android:name=".childThreadView.ChildThreadViewActivity"
+            android:hardwareAccelerated="true" />
+        <activity android:name=".activity.ScaleScrollImageViewActivity" />
     </application>
 
 </manifest>
