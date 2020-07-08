@@ -4,7 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.imprexion.viewdemo.activity.MultiTouchActivity
 import com.imprexion.viewdemo.activity.ScaleScrollImageViewActivity
+import com.imprexion.viewdemo.activity.ViewGroupTouchActivity
 import com.imprexion.viewdemo.activity.ViewSizeDemoActivity
 import com.imprexion.viewdemo.childThreadView.ChildThreadViewActivity
 import com.imprexion.viewdemo.databinding.ActivityMainBinding
@@ -26,6 +28,13 @@ class MainActivity : AppCompatActivity() {
 
         mainBinding.btnScaleScroll.setOnClickListener {
             startActivity(Intent(this, ScaleScrollImageViewActivity::class.java))
+        }
+
+        mainBinding.btnMultiTouch.setOnClickListener {
+            startActivity(Intent(this, MultiTouchActivity::class.java))
+        }
+        mainBinding.btnViewGroupTouch.setOnClickListener {
+            startActivity(Intent(this, ViewGroupTouchActivity::class.java))
         }
 
 

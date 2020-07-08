@@ -12,6 +12,7 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -22,6 +23,10 @@
             android:name=".childThreadView.ChildThreadViewActivity"
             android:hardwareAccelerated="true" />
         <activity android:name=".activity.ScaleScrollImageViewActivity" />
+
+        <activity android:name=".activity.MultiTouchActivity" />
+
+        <activity android:name=".activity.ViewGroupTouchActivity" />
     </application>
 
 </manifest>
