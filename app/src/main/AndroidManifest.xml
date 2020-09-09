@@ -27,6 +27,13 @@
         <activity android:name=".activity.MultiTouchActivity" />
 
         <activity android:name=".activity.ViewGroupTouchActivity" />
+
+        <activity android:name=".activity.ViewDragActivity" />
+        <activity android:name=".activity.ViewDragCollectActivity" />
+        <activity android:name=".animation.TextAnimActivity" />
+        <activity android:name=".animation.MotionAnimActivity" />
+        <activity android:name=".animation.ScrollAnimActivity" />
+        <activity android:name=".animation.CatAnimActivity" />
     </application>
 
 </manifest>

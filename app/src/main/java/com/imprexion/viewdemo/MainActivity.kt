@@ -4,10 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import com.imprexion.viewdemo.activity.MultiTouchActivity
-import com.imprexion.viewdemo.activity.ScaleScrollImageViewActivity
-import com.imprexion.viewdemo.activity.ViewGroupTouchActivity
-import com.imprexion.viewdemo.activity.ViewSizeDemoActivity
+import com.imprexion.viewdemo.activity.*
+import com.imprexion.viewdemo.animation.MotionAnimActivity
+import com.imprexion.viewdemo.animation.TextAnimActivity
 import com.imprexion.viewdemo.childThreadView.ChildThreadViewActivity
 import com.imprexion.viewdemo.databinding.ActivityMainBinding
 
@@ -35,6 +34,17 @@ class MainActivity : AppCompatActivity() {
         }
         mainBinding.btnViewGroupTouch.setOnClickListener {
             startActivity(Intent(this, ViewGroupTouchActivity::class.java))
+        }
+
+        mainBinding.btnViewDrag.setOnClickListener {
+            startActivity(Intent(this, ViewDragActivity::class.java))
+        }
+        mainBinding.btnViewCollect.setOnClickListener {
+            startActivity(Intent(this, ViewDragCollectActivity::class.java))
+        }
+
+        mainBinding.btnMotionAnim.setOnClickListener {
+            startActivity(Intent(this, MotionAnimActivity::class.java))
         }
 
 
